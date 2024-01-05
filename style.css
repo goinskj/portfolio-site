@@ -2,6 +2,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  padding: 0 50px;
 }
 
 .navbar > .container {
@@ -189,6 +190,25 @@ input.todo-input {
   width: auto;
 }
 
+.project-card {
+  height: 200px;
+  width: 300px;
+  border-radius: 5%;
+  border: 5px solid #6E07F3;
+  display: flex;
+  position: fixed;
+  top: calc(50% - 100px);
+  left: calc(50% - 150px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card > button {
+  width: 100px;
+}
+
+
 .section {
   padding-bottom: 18rem;
   background-color: #6E07F3;
@@ -228,6 +248,40 @@ input.todo-input {
   align-items: stretch;
 }
 
-.carousell {
-  
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

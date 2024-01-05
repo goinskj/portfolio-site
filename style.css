@@ -285,3 +285,10 @@ input.todo-input {
   text-decoration: none;
   cursor: pointer;
 }
+
+#bio {
+  display: block;
+  position: relative;
+  width: 400px;
+  left: calc(50% - 200px);
+}
